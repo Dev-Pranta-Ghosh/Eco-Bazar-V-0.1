@@ -1,0 +1,468 @@
+/* :root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Segoe Script", "Dancing Script", cursive;
+    --third-family: "Dancing Script", cursive;
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray-–-900: #1a1a1a;
+    --gray-scale-gray-–-800: #333;
+    --gray-scale-gray-–-700: #4d4d4d;
+    --gray-scale-gray-–-600: #666;
+    --gray-scale-gray-–-500: #808080;
+    --gray-scale-gray-–-400: #999;
+    --gray-scale-gray-–-300: #b3b3b3;
+    --gray-scale-gray-–-200: #ccc;
+    --gray-scale-gray-–-100: #e6e6e6;
+    --gray-scale-gray-–-50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --green: #3a9e3f;
+    --green-dark: #2d7d31;
+    --green-hover: #2e8b33;
+    --text-dark: #333;
+    --text-mid: #555;
+    --white: #fff;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    --transition: 0.22s ease;
+}
+
+@media (max-width: 575.98px) {
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .tab-btn {
+        font-size: 0.82rem;
+        padding: 5px 10px;
+    }
+
+    .product-img-wrap {
+        height: 100px;
+    }
+
+    .product-img {
+        max-height: 90px;
+    }
+
+    .product-name {
+        font-size: 0.82rem;
+    }
+
+    .price-current {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media (max-width: 767.98px) {
+    .nav-hamburger {
+        display: block !important;
+    }
+
+    .custom-navbar {
+        display: none;
+    }
+
+
+    .offcanvas {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        z-index: 99999 !important;
+        backdrop-filter: blur(10px);
+    }
+
+    .off-canvas .offcanvas-body {
+        width: 80% !important;
+        max-width: 50px !important;
+        margin: 0;
+        height: 100vh;
+        background-color: var(--gray-scale-white);
+    }
+}
+
+@media (max-width: 991.98px) {
+    #top-header {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
+    .custom-navbar {
+        padding: 0 12px;
+    }
+
+    .categories-toggle {
+        height: 48px;
+        font-size: 0.88rem;
+        padding: 0 14px;
+    }
+
+    .main-nav-links .nav-link {
+        padding: 10px 12px;
+    }
+
+    .main-nav-links .nav-link::after {
+        display: none;
+    }
+
+    .custom-dropdown {
+        border-top: none;
+        box-shadow: none;
+        border: none;
+        background: #f9f9f9;
+    }
+
+    .phone-link {
+        padding: 12px 12px;
+    }
+
+    .categories-dropdown {
+        position: static;
+        box-shadow: none;
+        border: none;
+        background: #f4faf4;
+        border-radius: 0;
+        border-top: 3px solid var(--green);
+    }
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) {} */
+
+/* ============================================================
+   EcoBazar — Responsive Stylesheet
+   Breakpoints:
+     xl  : ≥1200px  (large desktop)
+     lg  : ≥992px   (laptop / desktop)
+     md  : 768–991px (tablet)
+     sm  : 576–767px (large phone)
+     xs  : <576px   (small phone)
+   ============================================================ */
+
+/* ─────────────────────────────────────────────────────────────
+   1. TOP HEADER  →  hidden on tablet & below
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  #top-header {
+    display: none !important;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   2. NAVBARS (logo + search + wishlist row)
+   ───────────────────────────────────────────────────────────── */
+
+/* 2a. On tablet & below: hide search bar + fav/wishlist */
+@media (max-width: 991px) {
+  .navbars .nav-search,
+  .navbars .nav-wishlist,
+  .navbars .add-fav,
+  .navbars .shopping-bag-icon {
+    display: none !important;
+  }
+
+  /* Show the hamburger block */
+  .nav-hamburger {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Align logo + hamburger nicely */
+  .child-navbars {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbars {
+    padding: 10px 0;
+  }
+
+  .nav-logo {
+    flex: 1;
+  }
+
+  .nav-logo img {
+    max-width: 130px;
+  }
+}
+
+/* 2b. Small phones */
+@media (max-width: 575px) {
+  .nav-logo img {
+    max-width: 110px;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   3. BOTTOM NAVBAR (nav tag with All Categories + nav links)
+      Hidden on tablet & below
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .custom-navbar {
+    display: none !important;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   4. OFFCANVAS SIDE MENU — full overhaul for mobile nav
+   ───────────────────────────────────────────────────────────── */
+
+/* Base offcanvas width */
+.offcanvas.offcanvas-start {
+  width: 300px !important;
+  border-right: 3px solid var(--branding-success);
+}
+
+/* Header */
+.offcanvas-header {
+  background: var(--gren-gray-scale-900);
+  padding: 16px 20px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-header img {
+  max-width: 120px;
+  filter: brightness(0) invert(1);
+}
+
+.offcanvas-header .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+/* Tab nav inside offcanvas */
+.offcanvas-body {
+  padding: 0 !important;
+  overflow-y: auto;
+}
+
+.offcanvas-body .nav-tabs {
+  border-bottom: 2px solid var(--gray-scale-gray-–-100);
+  background: var(--gray-scale-gray-–-50);
+}
+
+.offcanvas-body .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-scale-gray-–-500);
+  padding: 12px 8px !important;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.offcanvas-body .nav-tabs .nav-link.active,
+.offcanvas-body .nav-tabs .nav-link:hover {
+  color: var(--branding-success);
+  border-bottom-color: var(--branding-success);
+  background: transparent;
+}
+
+/* Tab panes */
+.offcanvas-body .tab-content {
+  padding: 0;
+}
+
+/* ── Menu Tab: main nav links ── */
+#home-tab-pane {
+  padding: 8px 0;
+}
+
+/* Offcanvas nav items */
+.offcanvas-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas-nav-list li {
+  border-bottom: 1px solid var(--gray-scale-gray-–-100);
+}
+
+.offcanvas-nav-list > li > a,
+.offcanvas-nav-list > li > .offcanvas-acc-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-scale-gray-–-800);
+  text-decoration: none;
+  transition: 0.2s ease;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.offcanvas-nav-list > li > a:hover,
+.offcanvas-nav-list > li > .offcanvas-acc-btn:hover {
+  color: var(--branding-success);
+  background: var(--gren-gray-scale-50);
+  padding-left: 26px;
+}
+
+.offcanvas-nav-list > li > a.active-link {
+  color: var(--branding-success);
+  font-weight: 600;
+}
+
+/* Chevron icon inside accordion button */
+.offcanvas-acc-btn .acc-chevron {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.offcanvas-acc-btn[aria-expanded="true"] .acc-chevron {
+  transform: rotate(180deg);
+}
+
+/* Sub-menu (accordion collapse) */
+.offcanvas-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  background: var(--gray-scale-gray-–-50);
+}
+
+.offcanvas-submenu li a {
+  display: block;
+  padding: 9px 20px 9px 36px;
+  font-size: 13px;
+  color: var(--gray-scale-gray-–-600);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.offcanvas-submenu li a:hover {
+  color: var(--branding-success);
+  padding-left: 42px;
+}
+
+/* ── All Categories Tab ── */
+#profile-tab-pane {
+  padding: 8px 0;
+}
+
+.offcanvas-categories-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas-categories-list li {
+  border-bottom: 1px solid var(--gray-scale-gray-–-100);
+}
+
+.offcanvas-categories-list li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 20px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--gray-scale-gray-–-700);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.offcanvas-categories-list li a img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.offcanvas-categories-list li a:hover {
+  color: var(--branding-success);
+  background: var(--gren-gray-scale-50);
+  padding-left: 26px;
+}
+
+.offcanvas-categories-list li:last-child a {
+  color: var(--branding-success);
+  font-weight: 600;
+  border-top: 1px solid var(--gray-scale-gray-–-200);
+}
+
+/* Bottom strip: sign-in / sign-up inside offcanvas */
+.offcanvas-footer-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-top: 2px solid var(--gray-scale-gray-–-100);
+  background: var(--gray-scale-gray-–-50);
+  font-size: 13px;
+}
+
+.offcanvas-footer-strip a {
+  color: var(--branding-success);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.offcanvas-footer-strip span {
+  color: var(--gray-scale-gray-–-300);
+}
+
+/* ── Hamburger button itself ── */
+.nav-hamburger .btn.btn-primary {
+  background: var(--branding-success) !important;
+  border-color: var(--branding-success) !important;
+  border-radius: 8px;
+  padding: 6px 10px;
+  line-height: 1;
+  box-shadow: none;
+}
+
+.nav-hamburger .btn.btn-primary:hover {
+  background: var(--branding-success-dark) !important;
+}
+
+.nav-hamburger .btn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   5. SEARCH PANEL (click-on-search)
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .click-on-search {
+    display: none !important;
+  }
+}

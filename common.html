@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBazar</title>
+    <!-- ============== Fonts Linkup ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+    <!-- ============== FontAwesome Linkup ============= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- ============== Favicon Linkup ============= -->
+    <link rel="icon" type="image/x-icon" href="./assets/IMG/Vector.svg" />
+    <!-- ============== Bootstrap Css Linkup ============= -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css" />
+    <!-- ============== Slick Slider Css Linkup ============= -->
+    <link rel="stylesheet" type="text/css" href="./assets/Slick-Slider/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/Slick-Slider/slick/slick-theme.css" />
+    <!-- ============== Deal Countdown Css Linkup ============= -->
+    <link rel="stylesheet" href="./assets/retro-flipping-countdown/retro-flipping-countdown/css/flip-clock.css">
+    <!-- ============== Main Css Linkup ============= -->
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+</head>
+
+<body>
+    <!-- // // // // // // // // // // // Custom cursor \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+    <div class="custom-cursor" id="mainLeaf"></div>
+    <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Custom cursor // // // // // // // // // // // -->
+
+    <!-- // // // // // // // // // // // Header Section \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+    <header>
+
+        <!-- // // // // // // // // // // // top header \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+        <div id="top-header">
+            <div class="d-flex container-fluid container mx-auto justify-content-between">
+                <div class="location d-flex justify-content-center align-items-center">
+                    <a href="https://maps.app.goo.gl/u9w9TYUnF11HTY4BA" class="d-flex">
+                        <i class="bi bi-geo-alt"></i>
+                        <p class="my-0">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                    </a>
+                </div>
+                <div class="currency d-flex justify-content-center align-items-center">
+                    <div class="dropdown lang">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">ENG</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown currency-dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">USD</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">GBP</a></li>
+                            <li><a class="dropdown-item" href="#">BDT</a></li>
+                            <li><a class="dropdown-item" href="#">INR</a></li>
+                        </ul>
+                    </div>
+                    <a href="account.html" class="sign-in">Sign In </a>
+                    <p>/</p>
+                    <a href="account.html" class="sign-up"> Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ top header // // // // // // // // // // // -->
+
+
+        <!-- // // // // // // // // // // // Navbar \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+        <div class="navbars">
+            <div class="container-fluid container">
+                <div class="d-flex justify-content-between w-100 align-items-center">
+                    <div class="nav-logo col-md-3">
+                        <a href="index.html"><img src="./assets/IMG/Logo.svg" alt=""></a>
+                    </div>
+                    <div class="nav-search col-md-6">
+                        <div class="search-box">
+                            <div class="input-wrapper">
+                                <button class="search-box-space">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <button type="button" class="search-button">Search</button>
+                        </div>
+                    </div>
+                    <div class="nav-wishlist d-flex">
+                        <div class="add-fav d-flex align-items-center px-3 ">
+                            <a href="#"><i class="bi bi-heart"></i></a>
+                        </div>
+                        <div class="shopping-bag-icon d-flex align-items-center mx-3">
+                            <div class="bag-icon">
+                                <a href="#"><i class="bi bi-handbag me-2"></i></a>
+                            </div>
+                            <div class="shopping-bag-info ">
+                                <h6>Shopping Cart :</h6>
+                                <p>$57.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid container px-0">
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav main-nav-links">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                Home
+                                <i class="bi bi-chevron-down chevron-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="#">Home v1</a></li>
+                                <li><a class="dropdown-item" href="#">Home v2</a></li>
+                                <li><a class="dropdown-item" href="#">Home v3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Shop
+                                <i class="bi bi-chevron-down chevron-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="#">All Products</a></li>
+                                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                                <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                                <li><a class="dropdown-item" href="#">Sale</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Pages
+                                <i class="bi bi-chevron-down chevron-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Blog
+                                <i class="bi bi-chevron-down chevron-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item" href="#">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a class="phone-link ms-lg-auto" href="tel:2195550114">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>(219) 555-0114</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Navbar // // // // // // // // // // // -->
+    </header>
+    <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Header Section // // // // // // // // // // // -->
+
+
+    <!-- // // // // // // // // // // // Main \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+
+    <main>
+        <section id="common-hero">
+            <div class="container-fluid container">
+                <div class="d-flex justify-content-start align-items-center gap-3">
+                    <a href="index.html"><iconify-icon icon="stash:home" width="32" height="32"></iconify-icon></a>
+                    <span> > </span>
+                    <span><a href="#">Account</a></span>
+                    <span> > </span>
+                    <span><a href="account.html">Login / Signup</a></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sub-footer">
+            <div class="container-fluid container">
+                <div class="sub-footer row align-items-center">
+                    <div class="logo col-md-2">
+                        <a href="index.html"><img src="./assets/IMG/Logo.svg" alt=""></a>
+                    </div>
+                    <div class="div col-md-5 sub-footer-details">
+                        <h3>Subcribe our Newsletter</h3>
+                        <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                    </div>
+                    <div class="email-subscribe col-md-5">
+                        <div class="subscribe-wrapper">
+                            <div class="subscribe-form">
+                                <input type="email" placeholder="Your email address" />
+                                <button type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Main // // // // // // // // // // // -->
+    </main>
+
+
+    <!-- // // // // // // // // // // // Footer Section \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  -->
+    <footer>
+        <div class="container">
+            <div class="footer-content row align-items-center">
+                <div class="row">
+                    <div class="footer-number col-md-4 ">
+                        <div class="align-items-center justify-content-center ">
+                            <h4>About Ecobazar</h4>
+                            <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+                                magna congue nec.
+                            </p>
+                            <div class="number-mail d-flex justify-content-evenly align-items-center mt-4">
+                                <a href="tel:+8801521742095">+8801521742095</a>
+                                <p> or </p>
+                                <a href="mailto:prantaghoshtonmoy@gmail.com">click_me@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-account">
+                        <ul>
+                            <li><a href="#">
+                                    <h4>My Account</h4>
+                                </a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Shoping Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 helps">
+                        <ul>
+                            <li><a href="#">
+                                    <h4>Helps</h4>
+                                </a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Faqs</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 proxy">
+                        <ul>
+                            <li><a href="#">
+                                    <h4>Proxy</h4>
+                                </a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Products Details</a></li>
+                            <li><a href="#">Track Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 insta-card">
+                        <h4>Instagram</h4>
+                        <div class="insta-img">
+                            <a href="https://www.instagram.com"><img src="./assets/IMG/footer-instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social ">
+                <div class="row justify-content-between align-items-center ">
+                    <div class="social-icons col-md-3">
+                        <div class="row">
+                            <ul>
+                                <li class="d-inline"><a href="https://www.facebook.com"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="d-inline"><a href="https://www.twitter.com"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li class="d-inline"><a href="https://www.pinterest.com"><i
+                                            class="fa-brands fa-pinterest-p"></i></a>
+                                </li>
+                                <li class="d-inline"><a href="https://www.instagram.com"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 copyright">
+                        <p>Copyright © 2022 Ecobazar. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-3 payment-method">
+                        <a href="#"><img src="./assets/IMG/Payment Method.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Footer Section // // // // // // // // // // // -->
+
+
+    <!-- =============== JS Linkup =============== -->
+    <!-- =============== Jquery Linkup =============== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- =============== Bootstrap Linkup =============== -->
+    <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+    <!-- =============== Slick Slider Linkup =============== -->
+    <script type="text/javascript" src="./assets/Slick-Slider/slick/slick.min.js"></script>
+    <!-- =============== Deal Countdown Timer Linkup =============== -->
+    <script src="./assets/retro-flipping-countdown/retro-flipping-countdown/js/flip-clock.js"></script>
+    <!-- =============== Icon Linkup =============== -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <!-- =============== Main Js Linkup =============== -->
+    <script src="./assets/JS/app.js"></script>
+</body>
+
+</html>
